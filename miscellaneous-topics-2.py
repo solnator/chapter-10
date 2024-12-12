@@ -70,10 +70,10 @@ Are basic data type in programming represents by two possible values: True or Fa
 # if a==0 and b==0 and c==0:             if a==b==c==0:
 # if 1<a and a<b and b<5:                if 1<a<b<5:
 
-# ### 10.5 Continuation(\)
-# string=input('Enter string.')
-# if 'a' in string or 'e' in string or 'i' in string \
-#     or 'o' in string or 'u' in string:
-#         print('You use \'Vowel\' letter.')
+### 10.5 Continuation(\)
+string=input('Enter string.')
+if 'a' in string or 'e' in string or 'i' in string \
+    or 'o' in string or 'u' in string:
+        print('You use \'Vowel\' letter.')
 
-# ### 10.7 String formatting
+### 10.7 String formatting
