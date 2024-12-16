@@ -77,7 +77,7 @@ if 'a' in string or 'e' in string or 'i' in string \
         print('You use \'Vowel\' letter.')
 
 ### 10.7 String formatting
-### Formatting Floats(f)
+### Formatting Floats(:f)
 
 a = 23.60 * .25
 print('The tip is {:.2f}'.format(a))
@@ -86,6 +86,7 @@ bill=23.60
 tip=23.60 * .25
 print('Tip: ${:.2f}, Total: ${:.2f}'.format(tip, bill+tip))
 
+# formatting integers(:d)
 print('{:4d}'.format(2))
 print('{:4d}'.format(20))
 print('{:4d}'.format(200))
@@ -99,7 +100,7 @@ print('{:^9d}'.format(200000000))
 
 print('{:,d}'.format(200000000))   # Separet by comma(,)
 
-### Formatting Strings(s)
+### Formatting Strings(:s)
 print("{:^9s}".format("E"))         # Center-align
 print("{:>9s}".format("hey"))       # Left-align
 print("{:<9s}".format("solomon"))   # Right-align
