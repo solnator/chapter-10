@@ -99,6 +99,7 @@ print("{:^9d}".format(200000000))
 
 print("{:,d}".format(200000000))  # Separet by comma(,)
 
+
 ### Formatting Strings(:s)
 print("{:^9s}".format("E"))  # Center-align
 print("{:>9s}".format("hey"))  # Left-align
