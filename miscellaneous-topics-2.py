@@ -131,6 +131,7 @@ for x in range(-50, 51):  # Outer loop for x
         if 2 * x + 3 * y == 4 and x - y == 7:  # Check if both equations are satisfied
             print(f"Solution:x={x},y={y}")
 
+
 # ### Example 3
 for x in range(1, 100):
     for y in range(1, 100):
