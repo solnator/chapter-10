@@ -87,10 +87,11 @@ tip = 23.60 * 0.25
 print("Tip: ${:.2f}, Total: ${:.2f}".format(tip, bill + tip))
 
 ### formatting integers(:d)
-print("{:4d}".format(2))
-print("{:4d}".format(20))
-print("{:4d}".format(200))
-print("{:4d}".format(2000))
+print("{:5d}".format(2))
+print("{:5d}".format(20))
+print("{:5d}".format(200))
+print("{:5d}".format(2000))
+print("{:5d}".format(20000))
 
 print("{:^9d}".format(2))
 print("{:^9d}".format(200))
