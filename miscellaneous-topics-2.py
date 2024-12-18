@@ -48,6 +48,7 @@ Are basic data type in programming represents by two possible values: True or Fa
 ## if game_over:           ==       if game_over==True:
 ## while not game_over:    ==       while game_over==False:
 
+
 ### 10.3 Shortcuts
 # Statement         Shorthand
 # count=count+1      count+=1
