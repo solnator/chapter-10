@@ -1,18 +1,18 @@
-# ### Question 1
-# i=[]
-# for i in range(1, 100):
-#     if i % 3 == 0:
-#         print([i], end=" ")
-#         # print(i)
+### Question 1
+i=[]
+for i in range(1, 100):
+    if i % 3 == 0:
+        print([i], end=" ")
+        # print(i)
 
-# ### Question 2
-# weight=float(input("Enter weight in kilogram: "))
-# print("The weight in kilogram is: {:.1f}".format(weight))
+### Question 2
+weight=float(input("Enter weight in kilogram: "))
+print("The weight in kilogram is: {:.1f}".format(weight))
 
-# ### Question 3
-# word=input("Enter a word: ")
-# sorted_word=''.join(sorted(word))
-# print(sorted_word)
+### Question 3
+word=input("Enter a word: ")
+sorted_word=''.join(sorted(word))
+print(sorted_word)
 
 ### Question 4   ### with copilot
 products = ["Apples", "Oranges", "Bananas", "Grapes", "Peaches", "Plums", "Mangoes", "Cherries", "Kiwi", "Pears"]
