@@ -128,6 +128,7 @@ for i in range(2):  # Represents "layer"
         print()  # Move to the next row
     print()  # Separate each layer
 
+
 ### Example 2
 for x in range(-50, 51):  # Outer loop for x
     for y in range(-50, 51):  # Inner loop for y
