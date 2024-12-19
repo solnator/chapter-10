@@ -1,5 +1,5 @@
 from tkinter import *
-from PIL import Image, ImageTk
+from random import Image, ImageTk       ## not random its PIL
 def change():
     global image, photo
     pix = image.load()
