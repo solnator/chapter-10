@@ -14,7 +14,7 @@
 # sorted_word=''.join(sorted(word))
 # print(sorted_word)
 
-### Question 4
+### Question 4   ### with copilot
 products = ["Apples", "Oranges", "Bananas", "Grapes", "Peaches", "Plums", "Mangoes", "Cherries", "Kiwi", "Pears"]
 prices = [2.75, 20.25, 3.50, 4.00, 7.89, 5.50, 15.00, 12.75, 9.99, 135.00]
 
