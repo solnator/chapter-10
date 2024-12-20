@@ -47,3 +47,8 @@
 #     print("The two lists have at least one item common.")
 # else:
 #     print('The two lists ha no items in common.')
+
+### Question 7
+list=[int("1"*i)for i in range(1,101)]
+print(list)
+
