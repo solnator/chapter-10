@@ -52,8 +52,9 @@
 # list=[int("1"*i)for i in range(1,101)]
 # print(list)
 
-### Question
+### Question 8
 for i in range(1,1000):
-    if i%7==0 and str(i).endswith('6'):
-        # if str(i).endswith('6'):
+    if i%7==0 :
+        if str(i).endswith('6'):
             print(i)
+            
