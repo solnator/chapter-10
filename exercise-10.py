@@ -52,9 +52,13 @@
 # list=[int("1"*i)for i in range(1,101)]
 # print(list)
 
-### Question 8
-for i in range(1,1000):
-    if i%7==0 :
-        if str(i).endswith('6'):
-            print(i)
-            
+# ### Question 8
+# for i in range(1,1000):
+#     if i%7==0 :
+#         if str(i).endswith('6'):
+#             print(i)
+
+### Question 9   With ChatGPT
+numbers = [num for num in range(1, 10001) if '3' in str(num)]
+count=len(numbers)
+print(f"Count of numbers between 1 and 10,000 containing the digit '3': {count}")
