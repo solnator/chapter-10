@@ -25,25 +25,25 @@
 # for product, price in zip(products, discounted_prices):
 #     print(f"{product:10} $ {price:6.2f}")
 
-### Question 5
-from random import choice
-suits=['Hearts','Diamonds','Clubs','Spades']
-values=['One','Two','Three','Four','Five','Six','Seven',\
-    'Eight','Nine','Ten','Jack','Queen','King','Ace']
-## List comperhension and format method to create the card names.
-card_names=['{} of {}'.format(value,suit)for suit in suits for value in values]
-print(card_names)
+# ### Question 5
+# from random import choice
+# suits=['Hearts','Diamonds','Clubs','Spades']
+# values=['One','Two','Three','Four','Five','Six','Seven',\
+#     'Eight','Nine','Ten','Jack','Queen','King','Ace']
+# ## List comperhension and format method to create the card names.
+# card_names=['{} of {}'.format(value,suit)for suit in suits for value in values]
+# print(card_names)
 
-### Question 6
-list1 = [1, 2, 3, 4, 7, 8, 5]
-list2 = [5, 4, 7, 6, 3, 2, 9]
+# ### Question 6
+# list1 = [1, 2, 3, 4, 7, 8, 5]
+# list2 = [5, 4, 7, 6, 3, 2, 9]
 
-has_common=False
-for x in list1:
-    if x in list2:
-        has_common=True
+# has_common=False
+# for x in list1:
+#     if x in list2:
+#         has_common=True
 
-if has_common:
-    print("The two lists have at least one item common.")
-else:
-    print('The two lists ha no items in common.')
+# if has_common:
+#     print("The two lists have at least one item common.")
+# else:
+#     print('The two lists ha no items in common.')
