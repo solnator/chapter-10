@@ -100,25 +100,25 @@ def find_close_pairs(palindromes):
 palindromes = generate_palindromes()
 find_close_pairs(palindromes)
 
-# ### Question 12 With copilot
-# # Define the flip map for digits
-# flip_map = {'0': '0', '1': '1', '6': '9', '8': '8', '9': '6'}
+### Question 12 With copilot
+# Define the flip map for digits
+flip_map = {'0': '0', '1': '1', '6': '9', '8': '8', '9': '6'}
 
-# def flip_number(num):
-#     # Convert the number to string and reverse it
-#     num_str = str(num)
-#     flipped = ""
-#     for digit in reversed(num_str):
-#         if digit not in flip_map:
-#             return 'invalid'
-#         flipped += flip_map[digit]
-#     return flipped
+def flip_number(num):
+    # Convert the number to string and reverse it
+    num_str = str(num)
+    flipped = ""
+    for digit in reversed(num_str):
+        if digit not in flip_map:
+            return 'invalid'
+        flipped += flip_map[digit]
+    return flipped
 
-# # Loop through all six-digit numbers
-# for num in range(100000, 1000000):
-#     flipped_num = flip_number(num)
-#     if flipped_num != 'invalid':
-#         print(f"Original: {num}, Flipped: {flipped_num}")
+# Loop through all six-digit numbers
+for num in range(100000, 1000000):
+    flipped_num = flip_number(num)
+    if flipped_num != 'invalid':
+        print(f"Original: {num}, Flipped: {flipped_num}")
 
 # ### Question 13
 # i=3
