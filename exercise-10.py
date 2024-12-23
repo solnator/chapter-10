@@ -120,27 +120,27 @@ for num in range(100000, 1000000):
     if flipped_num != 'invalid':
         print(f"Original: {num}, Flipped: {flipped_num}")
 
-# ### Question 13
-# i=3
-# j=9
-# x=((i*j)+i+j)
-# print(x)
-# ## Answer = [19, 29, 39, 49, 59, 69, 79, 89, 99]
+### Question 13
+i=3
+j=9
+x=((i*j)+i+j)
+print(x)
+## Answer = [19, 29, 39, 49, 59, 69, 79, 89, 99]
 
-# def check_property(num):
-#     digits = [int(d) for d in str(num)]
-#     product = 1
-#     for d in digits:
-#         product *= d
-#     digit_sum = sum(digits)
-#     return (product + digit_sum) == num
+def check_property(num):
+    digits = [int(d) for d in str(num)]
+    product = 1
+    for d in digits:
+        product *= d
+    digit_sum = sum(digits)
+    return (product + digit_sum) == num
 
-# def find_numbers():
-#     result = []
-#     for num in range(1, 50):
-#         if check_property(num):
-#             result.append(num)
-#     return result
+def find_numbers():
+    result = []
+    for num in range(1, 50):
+        if check_property(num):
+            result.append(num)
+    return result
 
-# numbers = find_numbers()
-# print(numbers)
+numbers = find_numbers()
+print(numbers)
