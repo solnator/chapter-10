@@ -83,22 +83,22 @@ for num in range(10, 150):
             print(f"{num} becomes a palindrome: {current} in {iterations} iterations")
             break
 
-# ### Question 11 With ChatGPT And Copilot.
-# def generate_palindromes():
-#     palindromes = []
-#     for first_half in range(199, 801):  # First 3 digits of the palindrome
-#         palindrome = int(str(first_half) + str(first_half)[::-1])  # Create palindrome
-#         palindromes.append(palindrome)
-#     return palindromes
+### Question 11 With ChatGPT And Copilot.
+def generate_palindromes():
+    palindromes = []
+    for first_half in range(199, 801):  # First 3 digits of the palindrome
+        palindrome = int(str(first_half) + str(first_half)[::-1])  # Create palindrome
+        palindromes.append(palindrome)
+    return palindromes
 
-# def find_close_pairs(palindromes):
-#     for i in range(len(palindromes) - 1):
-#         if abs(palindromes[i] - palindromes[i + 1]) < 20:  # Check if within 20
-#             print(f"Pair: {palindromes[i]} and {palindromes[i + 1]}")
+def find_close_pairs(palindromes):
+    for i in range(len(palindromes) - 1):
+        if abs(palindromes[i] - palindromes[i + 1]) < 20:  # Check if within 20
+            print(f"Pair: {palindromes[i]} and {palindromes[i + 1]}")
 
-# # Main program
-# palindromes = generate_palindromes()
-# find_close_pairs(palindromes)
+# Main program
+palindromes = generate_palindromes()
+find_close_pairs(palindromes)
 
 # ### Question 12 With copilot
 # # Define the flip map for digits
