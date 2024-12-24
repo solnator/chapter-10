@@ -182,3 +182,28 @@ def convert_height(decimal_height):
 
 decimal_height = float(input("Enter height in decimal feet: "))
 convert_height(decimal_height)
+
+### Question 17
+def convert_height_to_inches(height_str):
+    try:
+        feet, inches = height_str.split("'")
+        feet = int(feet.strip())
+        inches = int(inches.strip().replace('"', ''))
+        
+        total_inches = (feet * 12) + inches
+        return total_inches
+    except ValueError:
+        print("Invalid format. Please enter height in the format X'Y\" (e.g., 5'11\").")
+        return None
+
+def main():
+    while True:
+        user_input = input("Enter height in the format X'Y\" (or type 'done' to quit): ").strip()
+        if user_input.lower() == 'done':
+            print("Goodbye!")
+            break
+        total_inches = convert_height_to_inches(user_input)
+        if total_inches is not None:
+            print(f"Total inches: {total_inches}")
+
+main()
