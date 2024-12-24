@@ -162,8 +162,23 @@ def find_smallest_number():
 result = find_smallest_number()
 print(f"The smallest number is: {result}")
 
+
 ### Question 15 
 zeros = 0
 for num in range(0, 1001):
     zeros += str(num).count("0")
 print(f"The total number of zeros from 0 to 1000 is: {zeros}")
+
+
+### Question 16 BY ChatGPT
+def convert_height(decimal_height):
+    
+    feet = int(decimal_height)
+    fractional_part = decimal_height - feet
+    
+    inches = round(fractional_part * 12)
+    
+    print(f"{feet} feet, {inches} inches")
+
+decimal_height = float(input("Enter height in decimal feet: "))
+convert_height(decimal_height)
