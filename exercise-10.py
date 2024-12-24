@@ -127,6 +127,7 @@ x=((i*j)+i+j)
 print(x)
 ## Answer = [19, 29, 39, 49, 59, 69, 79, 89, 99]
 
+### Question 13
 def check_property(num):
     digits = [int(d) for d in str(num)]
     product = 1
@@ -144,3 +145,4 @@ def find_numbers():
 
 numbers = find_numbers()
 print(numbers)
+
