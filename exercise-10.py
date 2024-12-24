@@ -146,3 +146,18 @@ def find_numbers():
 numbers = find_numbers()
 print(numbers)
 
+### Question 14
+def find_smallest_number():
+    num = 1
+    while True:
+        num_str = str(num)
+        new_num_str = num_str[1:] + num_str[0]
+        new_num = int(new_num_str)
+
+        if new_num == 3 * num:
+            return num
+        num += 1
+
+
+result = find_smallest_number()
+print(f"The smallest number is: {result}")
