@@ -161,3 +161,9 @@ def find_smallest_number():
 
 result = find_smallest_number()
 print(f"The smallest number is: {result}")
+
+### Question 15 
+zeros = 0
+for num in range(0, 1001):
+    zeros += str(num).count("0")
+print(f"The total number of zeros from 0 to 1000 is: {zeros}")
