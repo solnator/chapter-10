@@ -207,3 +207,31 @@ def main():
             print(f"Total inches: {total_inches}")
 
 main()
+
+
+### Question 18 With ChatGPT
+def calculate_point_difference(score_str):
+    try:
+        # Split the input into winning and losing scores
+        winning_score, losing_score = score_str.split('-')
+        winning_score = int(winning_score.strip())
+        losing_score = int(losing_score.strip())
+        # Calculate the point difference
+        point_difference = winning_score - losing_score
+        return point_difference
+    except ValueError:
+        print("Invalid format. Please enter the score in the format winning-losing (e.g., 27-13).")
+        return None
+
+def main():
+    while True:
+        user_input = input("Enter football score in the format winning-losing (or type 'done' to quit): ").strip()
+        if user_input.lower() == 'done':
+            print("Goodbye!")
+            break
+        point_difference = calculate_point_difference(user_input)
+        if point_difference is not None:
+            print(f"Point difference: {point_difference}")
+
+# Run the program
+main()
