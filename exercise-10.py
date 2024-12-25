@@ -235,3 +235,32 @@ def main():
 
 # Run the program
 main()
+
+### Question 19 GPT
+def main():
+    february_count = 0
+    day_25_count = 0
+    
+    while True:
+        user_input = input("Enter a birthday in the format month/day (or type 'done' to quit): ").strip()
+        if user_input.lower() == 'done':
+            print("Goodbye!")
+            print(f"Number of birthdays in February: {february_count}")
+            print(f"Number of birthdays on the 25th: {day_25_count}")
+            break
+        try:
+            # Parse the month and day
+            month, day = user_input.split('/')
+            month = int(month.strip())
+            day = int(day.strip())
+            
+            # Check conditions
+            if month == 2:
+                february_count += 1
+            if day == 25:
+                day_25_count += 1
+        except ValueError:
+            print("Invalid format. Please enter the birthday in the format month/day (e.g., 12/25).")
+
+# Run the program
+main()
