@@ -292,6 +292,7 @@ def convert_date_to_verbose(date_str):
     except (ValueError, KeyError):
         return "Invalid date format. Please enter the date in the format mm/dd/yy."
 
+
 def main():
     while True:
         user_input = input("Enter a date in the format mm/dd/yy (or type 'done' to quit): ").strip()
