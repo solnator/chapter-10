@@ -304,3 +304,24 @@ def main():
 # Run the program
 main()
 
+### Question 22
+def generate_multiplication_table(number):
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, 13):
+        result = number * i
+        print(f"{number} x {i} = {result}")
+
+def main():
+    while True:
+        user_input = input("Enter a number to generate its multiplication table (or type 'done' to quit): ").strip()
+        if user_input.lower() == 'done':
+            print("Goodbye!")
+            break
+        try:
+            number = int(user_input)
+            generate_multiplication_table(number)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+# Run the program
+main()
