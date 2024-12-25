@@ -264,3 +264,42 @@ def main():
 
 # Run the program
 main()
+
+### Question 20 GPT
+def convert_date_to_verbose(date_str):
+    # Dictionary mapping month numbers to names
+    months = {
+        "01": "January", "02": "February", "03": "March", "04": "April",
+        "05": "May", "06": "June", "07": "July", "08": "August",
+        "09": "September", "10": "October", "11": "November", "12": "December"
+    }
+    
+    try:
+        # Split the input into month, day, and year
+        month, day, year = date_str.split('/')
+        month_name = months[month]  # Get the month name
+        day = int(day)  # Convert day to integer
+        year = int(year)  # Convert year to integer
+        
+        # Convert two-digit year to four-digit year
+        if year < 50:
+            year += 2000
+        else:
+            year += 1900
+        
+        # Return the formatted date
+        return f"{month_name} {day}, {year}"
+    except (ValueError, KeyError):
+        return "Invalid date format. Please enter the date in the format mm/dd/yy."
+
+def main():
+    while True:
+        user_input = input("Enter a date in the format mm/dd/yy (or type 'done' to quit): ").strip()
+        if user_input.lower() == 'done':
+            print("Goodbye!")
+            break
+        result = convert_date_to_verbose(user_input)
+        print(result)
+
+# Run the program
+main()
