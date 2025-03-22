@@ -14,7 +14,7 @@ word=input("Enter a word: ")
 sorted_word=''.join(sorted(word))
 print(sorted_word)
 
-### Question 4   ### with copilot
+### Question 4
 products = ["Apples", "Oranges", "Bananas", "Grapes",\
     "Peaches", "Plums", "Mangoes", "Cherries", "Kiwi", "Pears"]
 prices = [2.75, 20.25, 3.50, 4.00, 7.89, 5.50, 15.00, 12.75, 9.99, 135.00]
@@ -58,7 +58,7 @@ for i in range(1,1000):
         if str(i).endswith('6'):
             print(i)
 
-### Question 9   With ChatGPT
+### Question 9 
 numbers = [num for num in range(1, 10001) if '3' in str(num)]
 count=len(numbers)
 print(f"Count of numbers between 1 and 10,000 containing the digit '3': {count}")
@@ -83,7 +83,7 @@ for num in range(10, 150):
             print(f"{num} becomes a palindrome: {current} in {iterations} iterations")
             break
 
-### Question 11 With ChatGPT And Copilot.
+### Question 11 
 def generate_palindromes():
     palindromes = []
     for first_half in range(199, 801):  # First 3 digits of the palindrome
@@ -170,7 +170,7 @@ for num in range(0, 1001):
 print(f"The total number of zeros from 0 to 1000 is: {zeros}")
 
 
-### Question 16 BY ChatGPT
+### Question 16 
 def convert_height(decimal_height):
     
     feet = int(decimal_height)
@@ -236,7 +236,7 @@ def main():
 # Run the program
 main()
 
-### Question 19 GPT
+### Question 19 
 def main():
     february_count = 0
     day_25_count = 0
@@ -265,7 +265,7 @@ def main():
 # Run the program
 main()
 
-### Question 20 GPT
+### Question 20 
 def convert_date_to_verbose(date_str):
     # Dictionary mapping month numbers to names
     months = {
